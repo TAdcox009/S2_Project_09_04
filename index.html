@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 7
+      Case Problem 4
+
+      Millennium Computers
+      Author: Todd Adcox Jr
+      Date:   1-22-19
+
+      Filename:   index.html
+
+   -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" href="mc_forms.css" />
+    <link rel="stylesheet" href="mc_styles.css" />
+    <!-- this links javascript from another file -->
+    <script src="mc_script.js"></script>
+</head>
+
+<!-- 
+
+ -->
+
+<body>
+
+    <!--A form element named cForm it uses the post method, the post method sends the data in its own secure data stream-->
+    <form name="cForm" action="http://www.mill_computers.com/orders/process.cgi" method="POST">
+
+        <!-- Input boxes for the customer’s first name, last name, street address, city, state, zip code, and
+phone number. The field names should be fName, lName, street, city, state, zip, and phone, respectively. -->
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstBox">First Name</label>
+            <input type="text" name="fName" id="firstBox" />
+
+            <label for="lastBox">First Name</label>
+            <input type="text" name="lName" id="lastBox" />
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
