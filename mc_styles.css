@@ -24,6 +24,10 @@
 
 */
 
-form {
-    display: flex;
+body {
+  text-align: center;
+}
+
+form>fieldset {
+  border: 0px;
 }

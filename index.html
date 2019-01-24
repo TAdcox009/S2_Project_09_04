@@ -25,10 +25,6 @@
     <script src="mc_script.js"></script>
 </head>
 
-<!-- 
-
- -->
-
 <body>
     <img src="mc_logo.png" alt=" Millennium Computers" />
 
@@ -39,51 +35,43 @@
 phone number. The field names should be fName, lName, street, city, state, zip, and phone, respectively. -->
 
         <fieldset>
-            <legend>Personal Information</legend>
+            <legend>Customer Information</legend>
 
             <div>
                 <label for="fName">First Name</label>
-                <input type="text" name="fName" id="fName" required/>
+                <input type="text" name="fName" id="fName" required />
             </div>
 
             <div>
                 <label for="lName">Last Name</label>
-                <input type="text" name="lName" id="lName" required/>
+                <input type="text" name="lName" id="lName" required />
             </div>
 
             <div>
                 <label for="street">Street address</label>
-                <input type="text" name="street" id="street" required/>
+                <input type="text" name="street" id="street" required />
             </div>
 
             <div>
-                    <label for="city">City</label>
-                    <input type="text" name="city" id="city" required/>
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" required />
             </div>
 
             <div>
                 <label for="state">State</label>
-                <input type="text" name="state" id="state" required/>
+                <input type="text" name="state" id="state" required />
             </div>
 
             <div>
                 <label for="zip">Zip code</label>
-                <input type="text" name="zip" id="zip"  pattern="^\d{5}(-\d{4})?$" required/>
+                <input type="text" name="zip" id="zip" pattern="^\d{5}(-\d{4})?$" required />
             </div>
 
             <div>
                 <label for="phone">Phone number</label>
-                <input type="tel" name="phone" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required/>
+                <input type="tel" name="phone" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
             </div>
         </fieldset>
-
-<!-- • Selection lists for the processor speed, memory, monitor size, and hard drive size. The field names should be pspeed, mem, monitor, and hd, respectively. The option values should match the option text.
-• Option buttons for the DVD burner, tuner card, and media card reader options. The field names should be dvd, tuner, and mcard, respectively.
-• A check box for the warranty field that asks customers if they want the 24-month extended warranty.
-• A text area box requesting additional information or comments on the order. • Three form buttons: a submit button with the text send Order, a reset button with the text
-cancel Order, and a command button with the text contact Me. 6. Create a style for your form in the mc_forms.css style sheet. The layout and appearance of the
-form are up to you. It should include style rules to highlight input boxes that receive the focus, and it should employ inline validation for missing or incorrectly entered data.
-7. Test your website on a variety of browsers to ensure your design works under different condition -->
 
         <fieldset>
             <legend>Build Your Computer</legend>
@@ -121,14 +109,52 @@ form are up to you. It should include style rules to highlight input boxes that 
                 <label for="hard">Hard Drive</label>
                 <select name="hard" id="hard">
                     <option value="240 GB">240 GB</option>
-                    <option value=""></option>
-                    <option value="19">19"</option>
-                    <option value="21">21"</option>
+                    <option value="500 GB">500 GB</option>
+                    <option value="750 GB">750 GB</option>
+                    <option value="1">1 TB</option>
                 </select>
             </div>
 
-        </fieldset>
+            <div>
+                <label for="dvd">DVD burner</label>
+                <label for="Yes">Yes</label>
+                <input name="dvd" id="Yes" value="Yes" type="radio">
+                <label for="No">No</label>
+                <input name="dvd" id="No" value="No" type="radio">
+            </div>
 
+            <div>
+                <label for="tuner">Tuner card</label>
+                <label for="Yes">Yes</label>
+                <input name="tuner" id="Yes" value="Yes" type="radio">
+                <label for="No">No</label>
+                <input name="tuner" id="No" value="No" type="radio">
+            </div>
+
+            <div>
+                <label for="media">Media card</label>
+                <label for="Yes">Yes</label>
+                <input name="media" id="Yes" value="Yes" type="radio">
+                <label for="No">No</label>
+                <input name="media" id="No" value="No" type="radio">
+            </div>
+
+            <div>
+                <label for="warranty">24-month warranty</label>
+                <label for="Yes">Yes</label>
+                <input name="warranty" id="Yes" value="Yes" type="radio">
+                <label for="No">No</label>
+                <input name="warranty" id="No" value="No" type="radio">
+            </div>
+
+            <div>
+                <label for="commBox">Request additional information/comments</label>
+                <textarea name="custExp" id="commBox"></textarea>
+            </div>
+        </fieldset>
+        <button type="submit">Send Order</button>
+        <button type="reset">Cancel order</button>
+        <button>Contact Me</button>
     </form>
 
 </body>
